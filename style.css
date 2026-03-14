@@ -1,0 +1,477 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding-top: 56px;
+    padding-left: 264px;
+
+    padding-right: 24px;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 0 16px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin: 0 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.hamburger-menu:active {
+    background-color: #e5e5e5;
+}
+
+.youtube-logo {
+    height: 20px;
+    padding: 18px 14px 18px 0;
+    object-fit: contain;
+}
+
+.middle-section {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 40px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: inset 0 1px 2px #eee;
+}
+
+.search-bar::placeholder {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #888;
+}
+
+.search-button {
+    height: 40px;
+    width: 64px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    margin-left: -1px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #f8f8f8;
+}
+
+.search-icon,
+.voice-search-icon,
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+    height: 24px;
+}
+
+.right-section {
+    width: 180px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.upload-icon:hover,
+.youtube-apps-icon:hover,
+.notifications-icon:hover {
+    background-color: #f2f2f2;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    width: 240px;
+    background-color: white;
+    overflow-y: auto;
+    padding-bottom: 24px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+}
+
+.categories {
+    position: sticky;
+    top: 56px;
+    background-color: white;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    overflow-x: auto;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.sidebar-link {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 12px;
+    margin: 0 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar-link img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    margin-right: 24px;
+}
+
+.sidebar-link div {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0f0f0f;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-divider {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 12px 0;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 16px;
+    padding: 0 24px;
+}
+
+.thumb {
+    position: relative;
+}
+
+.thumb img {
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.time {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    padding: 3px 4px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.info img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info h4 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #0f0f0f;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.channel,
+.meta {
+    font-size: 14px;
+    color: #606060;
+    line-height: 20px;
+}
+
+.channel:hover {
+    color: #0f0f0f;
+}
+
+@media (max-width: 500px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    transition: padding-left 0.2s ease-in-out;
+}
+
+body.sidebar-closed {
+    padding-left: 24px;
+}
+
+.sidebar {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.sidebar.closed {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.hamburger-menu:active {
+    background-color: #e5e5e5;
+}
+
+.search-button,
+.voice-search-button {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover,
+.voice-search-button:hover {
+    background-color: #e5e5e5;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 1px solid #1c62b9;
+    box-shadow: inset 0 1px 2px #eee;
+}
+
+.sidebar-link {
+    transition: background-color 0.15s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    width: auto;
+}
+
+.sidebar-link.active {
+    background-color: #f2f2f2;
+    font-weight: 500;
+}
+
+.sidebar-link.active div {
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background-color: #f2f2f2;
+}
+
+.video {
+    cursor: pointer;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.categories {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.category-pill {
+    background-color: #f2f2f2;
+    border: none;
+    height: 32px;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.category-pill:hover {
+    background-color: #e5e5e5;
+}
+
+.category-pill.active {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+}
+
+.theme-toggle-button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+}
+
+body.dark-mode .header,
+body.dark-mode .sidebar,
+body.dark-mode .categories {
+    background-color: #0f0f0f;
+}
+
+body.dark-mode .sidebar-link div,
+body.dark-mode .info h4 {
+    color: #f1f1f1;
+}
+
+body.dark-mode .channel,
+body.dark-mode .meta {
+    color: #aaaaaa;
+}
+
+body.dark-mode .channel:hover {
+    color: #f1f1f1;
+}
+
+body.dark-mode .search-bar {
+    background-color: #121212;
+    border-color: #303030;
+    color: #f1f1f1;
+}
+
+body.dark-mode .search-button,
+body.dark-mode .voice-search-button {
+    background-color: #222222;
+    border-color: #303030;
+}
+
+body.dark-mode .search-button:hover,
+body.dark-mode .voice-search-button:hover,
+body.dark-mode .upload-icon:hover,
+body.dark-mode .youtube-apps-icon:hover,
+body.dark-mode .notifications-icon:hover,
+body.dark-mode .theme-toggle-button:hover {
+    background-color: #303030;
+}
+
+body.dark-mode .sidebar-divider {
+    border-color: #303030;
+}
+
+body.dark-mode .sidebar-link:hover,
+body.dark-mode .sidebar-link.active {
+    background-color: #303030;
+}
+
+body.dark-mode .category-pill {
+    background-color: #272727;
+    color: #f1f1f1;
+}
+
+body.dark-mode .category-pill:hover {
+    background-color: #3f3f3f;
+}
+
+body.dark-mode .category-pill.active {
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+}
+
+body.dark-mode .search-icon,
+body.dark-mode .voice-search-icon,
+body.dark-mode .upload-icon,
+body.dark-mode .youtube-apps-icon,
+body.dark-mode .notifications-icon,
+body.dark-mode .hamburger-menu,
+body.dark-mode .sidebar-link img {
+    filter: invert(1);
+}

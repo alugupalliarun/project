@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>YouTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="../src/hamburger-menu.svg" title="Menu" />
+            <img class="youtube-logo" src="../src/youtube-logo-.svg" title="YouTube Home" />
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="search" placeholder="Search" title="Search" />
+
+            <button class="search-button" title="Search">
+                <img class="search-icon" src="../src/search.svg" />
+            </button>
+
+            <button class="voice-search-button" title="Search with your voice">
+                <img class="voice-search-icon" src="../src/voice-search-icon.svg" />
+            </button>
+        </div>
+
+        <div class="right-section">
+            <img class="upload-icon" src="../src/upload.svg" title="Create" />
+            <img class="youtube-apps-icon" src="../src/youtube-apps.svg" title="YouTube apps" />
+            <img class="notifications-icon" src="../src/notifications.svg" title="Notifications" />
+            <button class="theme-toggle-button" title="Toggle Dark/Light Mode">🌙</button>
+            <img class="current-user-picture" src="../src/user.avif" title="Profile" />
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link active">
+            <img src="../src/home.svg" />
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="../src/explore.svg" />
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="../src/subscriptions.svg" />
+            <div>Subscriptions</div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-link">
+            <img src="../src/library.svg" />
+            <div>Library</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="../src/history_24.svg" />
+            <div>History</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="../src/my videos.jpeg" />
+            <div>Your videos</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="../src/library.svg" />
+            <div>Watch later</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="categories">
+            <button class="category-pill active">All</button>
+
+            <button class="category-pill">Music</button>
+            <button class="category-pill">Data Structures</button>
+            <button class="category-pill">Web Development</button>
+        </div>
+
+        <section class="content" id="search-results-section" style="display: none;">
+        </section>
+
+        <section class="content" id="home-section">
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/fHKPQEVCX-s?si=FgmPAvWsWkRdtgcK"><img
+                            src="../src/1.jpg" /></a>
+                    <span class="time">12:43</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>PYTHON COURSE</h4>
+                        <p class="channel">SWAROOP</p>
+                        <p class="meta">123K views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN"><img
+                            src="../src/2.jpg" /></a>
+                    <span class="time">2:10</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>JAVA FULL COURSE</h4>
+                        <p class="channel">BRO CODE</p>
+                        <p class="meta">12K views • 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN"><img
+                            src="../src/3.jpg" /></a>
+                    <span class="time">2:07</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>HTML & CSS COURSE</h4>
+                        <p class="channel">TELUSKO</p>
+                        <p class="meta">171K views • 11 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN"><img
+                            src="../src/4.jpg" /></a>
+                    <span class="time">3:28</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>MOBILE REVIEW</h4>
+                        <p class="channel">Prasad Tech</p>
+                        <p class="meta">500K views • 5 hours ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN"><img
+                            src="../src/5.jpg" /></a>
+                    <span class="time">12:10</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>
+                            <a href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN">HTML & CSS FULL COURSE</a>
+                        </h4>
+                        <p class="channel">Super Simple Dev</p>
+                        <p class="meta">405K views • 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="thumb">
+                    <a target="_blank" href="https://youtu.be/G3e-cpL7ofc?si=cBDUlY2dsx352biN"><img
+                            src="../src/6.jpg" /></a>
+                    <span class="time">5:37</span>
+                </div>
+                <div class="info">
+                    <img src="../src/user.avif" />
+                    <div>
+                        <h4>PYTHON FULL COURSE</h4>
+                        <p class="channel">Programming</p>
+                        <p class="meta">120K views • 20 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section class="content" id="music-section" style="display: none;">
+            <div class="video">
+                <div class="thumb"><a href="#"><img src="../src/music.webp" /></a><span class="time">3:45</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Best Pop Hits 2026</h4>
+                        <p class="channel">Music Mix</p>
+                        <p class="meta">2M views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img src="../src/music2.webp" /></a><span class="time">1:02:11</span>
+                </div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Relaxing Lofi Music</h4>
+                        <p class="channel">Chill Vibes</p>
+                        <p class="meta">5.5M views • 6 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img src="../src/3.jpg" /></a><span class="time">45:20</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Classical Piano Masterpieces</h4>
+                        <p class="channel">Classical Sounds</p>
+                        <p class="meta">800K views • 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img src="../src/4.jpg" /></a><span class="time">3:20</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Top 50 EDM Drops</h4>
+                        <p class="channel">Rave On</p>
+                        <p class="meta">1.1M views • 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img src="../src/5.jpg" /></a><span class="time">5:15</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Acoustic Guitar Covers</h4>
+                        <p class="channel">Cover Nation</p>
+                        <p class="meta">3M views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1520690214124-2405c5217036?w=500&q=80" /></a><span
+                        class="time">2:30:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Study Motivation Music</h4>
+                        <p class="channel">Focus Brain</p>
+                        <p class="meta">10M views • 4 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Structures Section -->
+        <section class="content" id="data-structures-section" style="display: none;">
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" /></a><span
+                        class="time">4:00:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Data Structures and Algorithms Full Course</h4>
+                        <p class="channel">CodeAcademy</p>
+                        <p class="meta">3M views • 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&q=80" /></a><span
+                        class="time">12:30</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Big O Notation Explained Fast</h4>
+                        <p class="channel">Tech Math</p>
+                        <p class="meta">1.5M views • 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500&q=80" /></a><span
+                        class="time">45:10</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Mastering Linked Lists</h4>
+                        <p class="channel">CS Basics</p>
+                        <p class="meta">800K views • 8 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&q=80" /></a><span
+                        class="time">1:30:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Binary Search Trees in Java</h4>
+                        <p class="channel">Java King</p>
+                        <p class="meta">500K views • 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" /></a><span
+                        class="time">22:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Google Interview Coding Problem</h4>
+                        <p class="channel">Tech Interview</p>
+                        <p class="meta">4M views • 2 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=500&q=80" /></a><span
+                        class="time">15:45</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Graph Traversal Algorithms</h4>
+                        <p class="channel">Algo Expert</p>
+                        <p class="meta">2M views • 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="web-development-section" style="display: none;">
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80" /></a><span
+                        class="time">14:24</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Discovering Hidden Gems in Coding</h4>
+                        <p class="channel">Tech Explorer</p>
+                        <p class="meta">50K views • 1 week ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500&q=80" /></a><span
+                        class="time">10:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>10 Coding Secrets You Didn't Know</h4>
+                        <p class="channel">Code Master</p>
+                        <p class="meta">120K views • 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" /></a><span
+                        class="time">22:15</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Building a startup in 30 days</h4>
+                        <p class="channel">Silicon Valley Diary</p>
+                        <p class="meta">2M views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500&q=80" /></a><span
+                        class="time">15:30</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>The Best CSS Frameworks of 2026</h4>
+                        <p class="channel">Design Guru</p>
+                        <p class="meta">500K views • 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80" /></a><span
+                        class="time">18:45</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Why I Switched to Neovim (And You Should Too)</h4>
+                        <p class="channel">Terminal King</p>
+                        <p class="meta">300K views • 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumb"><a href="#"><img
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80" /></a><span
+                        class="time">1:20:00</span></div>
+                <div class="info"><img src="../src/user.avif" />
+                    <div>
+                        <h4>Full Stack Web Development Roadmap</h4>
+                        <p class="channel">FreeCodeCamp</p>
+                        <p class="meta">5M views • 5 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="new.js"></script>
+</body>
+
+</html>
